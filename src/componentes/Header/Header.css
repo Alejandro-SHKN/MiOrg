@@ -1,0 +1,8 @@
+.div__containerHeader{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.img__Header{
+    width: 100%;
+}

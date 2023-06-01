@@ -1,0 +1,18 @@
+.select__EquipoSelect{
+    width: 60%;
+    height: 80px;
+    border: none;
+}
+.select__EquipoSelect:focus{
+    outline-width: 1px;
+    outline-color:  #6278F7;
+}
+/* Responsive */
+@media screen and (max-width:767px) {
+    .select__EquipoSelect{
+        width: 85%;
+        height: 80px;
+        border: none;
+        background-color: white;
+    }
+}

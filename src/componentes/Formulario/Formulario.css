@@ -1,0 +1,90 @@
+.div__ContainerFormRoot{
+    background-color:  #E5E5E5;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.div__InternoForm{
+    margin-top: 50px;
+    width: 80%;
+    background-color: #F6F6F6;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.48);
+}
+.h2__Form{
+    font-family: 'Prata', serif;
+    align-self: flex-start;
+    margin-left: 20%;
+    
+}
+.label__Form{
+    align-self: flex-start;
+    margin-left: 20%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+.input__TextForm{
+    border:none;
+    width: 60%;
+    height: 80px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+.input__TextForm:focus{
+    outline-width: 1px;
+    outline-color:  #6278F7;
+}
+.button__Crear{
+    margin-top: 36px;
+    align-self: self-start;
+    margin-left: 20%;
+    width: 120px;
+    padding: 16px;
+    border: none;
+    background-color: #6278F7;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.button__Crear:hover{
+    color:#95FFD4;
+    cursor: pointer;
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width:767px) {
+    .div__InternoForm{
+        width: 93%;
+    }
+    .h2__Form {
+        align-self: center;
+        text-align: center;
+        font-size: 18px;
+        margin-left: 0%;
+   }
+   .label__Form{
+    align-self: flex-start;
+    margin-left: 10%;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+   .input__TextForm{
+       width: 84%;
+
+   }
+   .button__Crear{
+    margin-left: 8%;
+    padding: 19px;
+    width: 140px;
+   }
+}
+
