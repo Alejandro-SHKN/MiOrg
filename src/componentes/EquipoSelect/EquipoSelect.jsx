@@ -12,7 +12,7 @@ const EquipoSelect=(props)=>{
     ];
     return <> <label className='label__Form' htmlFor={props.name}>{props.Name}</label>
     <select name="EquipoSelect" className='select__EquipoSelect' id="ID-EquipoSelect">
-     {equipoOptions.map((equipo,index)=>(<option key={index} value={equipo}>{equipo}</option>))}
+    {equipoOptions.map((equipo,index)=>(<option key={index} value={equipo}>{equipo}</option>))}
     </select>
     </>
 }

@@ -12,7 +12,8 @@ function App() {
   return (
     <>
      <Header/>
-     {show === true ? <Formulario/> : <div></div>}
+     {/* {show ? <Formulario/> : <></>} */}
+     {show && <Formulario/>}
      <MiOrg functionShow={changeShow}/>
     </>
   )
