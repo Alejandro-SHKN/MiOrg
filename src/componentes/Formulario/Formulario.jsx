@@ -1,49 +1,3 @@
-// import { useState } from "react";
-// import EquipoSelect from "../EquipoSelect/EquipoSelect";
-// import InputTexto from "../InputTexto/InputTexto";
-// import "./Formulario.css";
-
-// const Formulario = () => {
-//   //↓f Previene el Envio por defecto ↓
-//   const handleSubmitForm = (e) => {
-//     e.preventDefault();
-//     console.log(e);
-//   };
-//   //↓f Actualizar los valores internos de los inputs↓
-//   const [nombreValue, setNombre] = useState(``);
-//   const [puestoValue, setPuesto] = useState(``);
-//   const [fotoValue, setFoto] = useState(``);
-
-//   const actualizarValor= (e) => {
-//     setNombre(e.target.value);
-//   };
-//   return (
-//     <div className="div__ContainerFormRoot">
-//       <form onSubmit={handleSubmitForm} className="div__InternoForm">
-//         <h2 className="h2__Form">
-//           Rellena el formulario para crear el colaborador
-//         </h2>
-//         <InputTexto
-//           label={`Nombre`}
-//           name={`nombre`}
-//           placeholder={`nombre`}
-//           actualizarValor={setNombre}
-//           valor={nombreValue}
-//         />
-//         <InputTexto label={`Puesto`} name={`puesto`} placeholder={`puesto`}
-//         // actualizarValor={actualizarValorPuesto}
-//         /*valor={puestoValue}*/ />
-//         <InputTexto label={`Foto`} name={`foto`} placeholder={`foto`} />
-//         <EquipoSelect name={`equipo`} Name={`Equipo`} />
-//         <button type="submit" className="button__Crear">
-//           Crear
-//         </button>
-//       </form>
-//     </div>
-//   );
-// };
-// export default Formulario;
-
 import { useState } from "react";
 import EquipoSelect from "../EquipoSelect/EquipoSelect";
 import InputTexto from "../InputTexto/InputTexto";
@@ -54,18 +8,18 @@ const Formulario = () => {
   const handleSubmitForm = (e) => {
     e.preventDefault();
     console.log(e);
-    let datosAEnviar={
-        nombre,
-        puesto,
-        foto
+    let enviarDatos = {
+      nombre,
+      puesto,
+      foto
     }
-    console.log(datosAEnviar);
-    
+    console.log(enviarDatos);
   };
-  //↓f Actualizar los valores internos de los inputs↓
-  const [nombre,setNombre]=useState("");
+  //↓f useState de los valores internos de los inputs↓
+  const [nombre,setNombre]=useState("");  
   const [puesto,setPuesto]=useState("");
-  const [foto,setFoto]=useState("");
+  const [foto,setFoto]=useState("");  
+  const [equipo,setEquipo]=useState("");
 
   return (
     <div className="div__ContainerFormRoot">
@@ -77,21 +31,23 @@ const Formulario = () => {
           label={`Nombre`}
           name={`nombre`}
           placeholder={`nombre`}
-          valorNombre={nombre}
-          actualizarValor={setNombre}
           required
+          actualizarValor={setNombre}
+          valor={nombre}
         />
         <InputTexto label={`Puesto`} name={`puesto`} placeholder={`puesto`}
-       valorNombre={puesto}
-       actualizarValor={setPuesto}
        required
+       actualizarValor={setPuesto}
+       valor={puesto}
        />
         <InputTexto label={`Foto`} name={`foto`} placeholder={`foto`} 
-         valorNombre={foto}
-         actualizarValor={setFoto}
          required
+         actualizarValor={setFoto}
+         valor={foto}
          />
         <EquipoSelect name={`equipo`} Name={`Equipo`} 
+        valor={equipo}
+        actualizarValorEquipo={setEquipo}
         />
         <button type="submit" className="button__Crear">
           Crear

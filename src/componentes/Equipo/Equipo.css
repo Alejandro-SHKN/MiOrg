@@ -1,0 +1,22 @@
+.div__Principal{
+    width: 100%;
+    /* Color de fondo se aplica en el componente en base a props */
+    background-color: aquamarine;
+    padding: 32px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.h2__Titulo{
+    border-bottom: solid;
+    display: inline-block;
+    font-family: 'Prata', serif;
+    color: #212121;
+    padding-bottom: 8px;
+    /* Border Color se aplica en el componente Raíz en base a props */
+}
+.div__contenedorTarjetas{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}

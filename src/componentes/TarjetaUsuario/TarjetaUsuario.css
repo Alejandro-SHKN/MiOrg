@@ -1,0 +1,15 @@
+
+.div__Componente {
+    width: 20%;
+    margin-right: 20px;
+    background-color: orangered;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;    
+    /* background: linear-gradient(#57C278, #57C278) top; */
+    background-size: 100% 35%;
+    background-repeat: no-repeat;
+    background-color: white; 
+    margin-bottom: 40px;
+}
